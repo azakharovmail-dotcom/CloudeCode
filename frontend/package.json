@@ -2,21 +2,21 @@
   "name": "eventhub-frontend",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "typescript": "^5.4.5",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
     "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead"],
-    "development": ["last 1 chrome version"]
-  },
-  "proxy": "http://backend:8000"
+    "start": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
 }
